@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.Spring.autowire.Adress" name="adress">
+        <property name="street" value="New Nagar"/>
+        <property name="city" value="Ranchi"/>
+    </bean>
+
+    <bean class="com.Spring.autowire.Emp" name="emp1" autowire="byType"/>
+</beans>

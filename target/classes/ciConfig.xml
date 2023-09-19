@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.Spring.constructor.Certi" name="certi">
+        <constructor-arg value="Andriod using Kotlin"/>
+    </bean>
+    <bean class="com.Spring.constructor.Person" name="person">
+        <constructor-arg value="Pankaj Kumar munda"/>
+        <constructor-arg value="10068"/>
+        <constructor-arg ref="certi"/>
+    </bean>
+
+
+    <bean class="com.Spring.constructor.Addition" name="add">
+        <constructor-arg value="12.0" type="double"/>
+        <constructor-arg value="34.0" type="double"/>
+    </bean>
+</beans>
